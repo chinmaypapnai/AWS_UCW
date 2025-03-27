@@ -140,7 +140,7 @@ This project aims to address the question: **identifying Vancouver neighborhoods
 ### **6. Data Cataloging**  
 #### 6.1 **Build a Data Catalog with AWS Glue**  
 - Created a database `vsb-schools-db` to track datasets across S3 buckets.  
-- **Metadata Tracked**: Column names, types, partitions (year/quarter).  
+- **Metadata Tracked**: school_name, school_catagory, geom etc.  
 ![Empty Database](assets/empty%20database.png)  
 
 #### 6.2 **Crawler Execution**  
