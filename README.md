@@ -239,6 +239,7 @@ LIMIT 3;
 ---
 **AWS Badge**
 ![Final Exam](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/badge.png)
+https://www.credly.com/go/wkwbzmXN
 --- 
 
 ## 📂 **Repository Structure**  
