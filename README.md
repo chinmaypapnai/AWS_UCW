@@ -237,6 +237,9 @@ LIMIT 3;
   ![Dashboard](assets/dashboard.png)  
 
 ---
+**AWS Final Screenshot**
+![Final Exam](assets/AWS%20FINAL.png)
+--- 
 
 ## 📂 **Repository Structure**  
 ```bash
@@ -265,9 +268,7 @@ Future enhancements could integrate AWS Lambda for automatic glue job failure ha
 **Connect**: [LinkedIn](https://ca.linkedin.com/in/chinmaypapnai)  
 
 --- 
-**AWS Final Screenshot**
-![Final Exam](assets/AWS%20FINAL.png)
---- 
+
 **Author**
 Chinmay Papnai (2305599)🏙️
-BUSI 653: Cloud Computing Technologies (HBD-WINTER25-05)
+*BUSI 653: Cloud Computing Technologies (HBD-WINTER25-05)*
