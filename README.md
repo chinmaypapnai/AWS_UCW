@@ -111,7 +111,7 @@ This project addresses a critical urban planning challenge: **identifying Vancou
 #### 4.2 **Data Validation**  
 - School Names were checked for duplication as it is Primary Key.  
 - Data was further checked in the data processing pipeline 
-![Data Pipeline](assets/QC%pipeline.png)
+![Data Pipeline](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/QC%20pipeline.png)
 ---
 
 ### **5. Data Quality Control**  
