@@ -89,8 +89,6 @@ This project addresses a critical urban planning challenge: **identifying Vancou
 
 ---
 
-Here’s the revised **Diagnostic Analysis** section with deeper insights and clearer validation methodology:
-
 ---
 
 ### **4. Diagnostic Analysis**  
