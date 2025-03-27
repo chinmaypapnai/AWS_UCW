@@ -94,23 +94,22 @@ This project addresses a critical urban planning challenge: **identifying Vancou
 ### **4. Diagnostic Analysis**  
 #### 4.1 **Root Cause Analysis**  
 - **Why Does Downtown Have Fewer Schools?**  
-  - **Hypothesis 1**: High land prices limit school construction.  
-  - **Hypothesis 2**: Lower family density in urban cores.  
-- **Validation**: Cross-referenced with external demographic datasets (not included here) showing fewer families with children in Downtown.  
+  - **Hypothesis 1**: High land prices limit school construction.    
+- **Validation**: Cross-referenced with external demographic datasets (not included here due to time constraints) showing Downtown has higher than average real estate prices in Vancouver .
 
 #### 4.2 **Data Validation**  
-- Sampled 10% of schools to verify addresses against Vancouver’s public records.  
-- Flagged discrepancies (e.g., schools listed in incorrect zones) for manual review.  
-
+- School Names were checked for duplication as it is Primary Key.  
+- Data was further checked in the data processing pipeline 
+![Data Pipeline](assets/visualetl.png)
 ---
 
 ### **5. Data Quality Control**  
 #### 5.1 **Automated Quality Rules**  
 - **Glue ETL Quality Checks**:  
   - **Rule 1**: Reject rows with missing `geo_local_area`.  
-  - **Rule 2**: Ensure `school_category` is one of ["PUBLIC", "INDEPENDENT", "SAFESTART BC"].  
-  - **Rule 3**: Validate `latitude` (-90 to 90) and `longitude` (-180 to 180).  
+  - **Rule 2**: Ensure `school_category` is one of ["PUBLIC", "INDEPENDENT", "SAFESTART BC"].    
 ![QC Rules](assets/rules.png)  
+![QC Rules](assets/QC%pipeline.png) 
 
 #### 5.2 **Segregate Valid/Invalid Data**  
 - Valid data stored in `vsb-trf-chi/passed/` for analysis.  
@@ -180,20 +179,28 @@ LIMIT 3;
 ---
 
 ### **9. Cost Estimation**  
+  
+#### 9.1 **Detailed AWS Cost Breakdown**  
+- **Total Monthly Cost**: **$1.67 USD**  
+- **Annual Cost (12 Months)**: **$20.04 USD**   
 
-Service	Monthly Cost
-S3 Storage	$2.50
-AWS Glue	$0.66
-Glue Databrew	$51.00
-EC2	$30.00
-Athena	$5.00
-Total	$89.16
+#### 9.2 **Service-Specific Costs**  
+| Service                  | Monthly Cost | Key Cost Drivers                                  |  
+|--------------------------|--------------|---------------------------------------------------|  
+| **Amazon S3**            | $0.00        | Minimal storage (0.0001907 GB) & low requests (10 PUT/GET). |  
+| **AWS Glue Databrew**    | $1.07        | 1 interactive session + 5 nodes for data cleaning jobs.       |  
+| **AWS Glue ETL**         | $0.60        | 10 DPUs for Spark jobs + 0.0625 DPUs for Python Shell jobs.   |  
+
+#### 9.3 **Key Observations**  
+- **Zero S3 Costs**: Free-tier eligibility and minimal storage/requests kept S3 costs at $0.  
+- **Glue Optimization**: Jobs were designed to use minimal DPUs (Data Processing Units) for cost efficiency.  
+- **No EC2/Athena Costs**: These were not included in the estimate due to variable cost.
 
 **Cost-Saving Tips**:  
 - Switch EC2 to spot instances during non-peak hours.  
 - Compress raw data to reduce S3 costs.  
 
-![Cost Breakdown](assets/DAP.png)  
+![Cost Breakdown]((assets/chinmaycost.png))  
 
 ---
 
