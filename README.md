@@ -40,7 +40,7 @@ This project addresses a critical urban planning challenge: **identifying Vancou
 
 ### **1. Data Ingestion**  
 #### 1.1 **Set Up EC2 Instance**  
-- Launched a `t3.small` EC2 instance to simulate the Vancouver School Board (VSB) server environment.  
+- Launched a `t3.micro` EC2 instance to simulate the Vancouver School Board (VSB) server environment.  
 - Configured IAM roles to grant S3 write access.  
 ![EC2 Instance](assets/ec2in.png)  
 
