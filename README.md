@@ -253,25 +253,14 @@ This project demonstrates the power of cloud technologies to transform raw data 
 
 **Key Achievements**:  
 - **Cost Efficiency**: The DAP was desined with cost efficency in mind through serverless optimizations, Glue job tuning and sticking to project requirements without goldplating.  
-- **End-to-End Automation**: Built a secure, reproducible workflow from ingestion (EC2/S3) to analysis (Athena), ensuring data quality with Glue Databrew and governance checks.  
-- **Actionable Insights**: Diagnosed root causes like zoning restrictions and land prices using cross-referenced datasets, empowering policymakers to address educational gaps.  
+- **End-to-End Automation**: Built a secure, reproducible workflow from ingestion (EC2/S3) to analysis (Athena), ensuring data quality with Glue Databrew and governance checks.    
 
 **Technical Impact**:  
-The platform’s modular design allows seamless adaptation to other cities or public services (e.g., hospitals, parks), proving cloud analytics can drive data-driven governance. By prioritizing security (KMS encryption, CloudTrail logging) and stakeholder transparency (dashboards, alarms), this project bridges technical rigor with real-world usability.  
+The platform’s modular design allows seamless adaptation to other cities or public services (e.g., hospitals, parks), proving cloud analytics can drive data-driven governance. By prioritizing security (KMS encryption, CloudTrail logging) and monitoring (dashboards, alarms), this project aims to be scalable in nature.  
 
 **Looking Ahead**:  
-Future enhancements could integrate geospatial mapping (QuickSight) or predictive modeling to forecast school demand. This work underscores my ability to deliver scalable, cost-effective solutions—a skill I aim to leverage in tackling complex societal challenges through technology.  
-
-**Let’s Connect**:  
-[LinkedIn](#) | [GitHub](#) | [Email](#)  
-*Open to collaborations that turn data into impact!* 🚀  
-
---- 
-
-This conclusion ties technical execution to real-world relevance, emphasizing cost savings, scalability, and societal impact while inviting further engagement.
-
-**Student ID**: 2305599  
-**License**: MIT  
+Future enhancements could integrate AWS Lambda for automatic glue job failure handling. 
+   
 **GitHub Repo**: [Link](https://github.com/chinmaypapnai)  
 **Connect**: [LinkedIn](https://ca.linkedin.com/in/chinmaypapnai)  
 
@@ -280,4 +269,5 @@ This conclusion ties technical execution to real-world relevance, emphasizing co
 ![Final Exam](assets/AWS%20FINAL.png)
 --- 
 **Author**
-Chinmay Papnai🏙️
+Chinmay Papnai (2305599)🏙️
+BUSI 653: Cloud Computing Technologies (HBD-WINTER25-05)
