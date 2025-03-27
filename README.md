@@ -47,7 +47,7 @@ This project aims to address the question: **identifying Vancouver neighborhoods
 #### 1.2 **Upload Data to S3**  
 - Transferred `school-list.csv` to the raw S3 bucket using powershell commands in the remote R2D server:  
   ```bash
-  aws s3 cp school-list.csv s3://vsb-raw-chi/year=2025/quarter=01/
+  Write-S3Object -BucketName "vsb-raw-chi" -File "C:\path\school-list.csv" -Key "school-list.csv"
   ```  
 - Organized data by year/quarter for future scalability.  
 ![Data Upload](assets/data%20ingestion.png)  
@@ -59,7 +59,7 @@ This project aims to address the question: **identifying Vancouver neighborhoods
 #### 2.1 **Initial Profiling with AWS Glue Databrew**  
 - Created a Databrew project linked to the raw S3 bucket.  
 - **Key Insights**:  
-  - **Column Discrepancies**: The `geom` column contained mixed formats (e.g., `POINT (-123.1 49.2)` and `-123.1, 49.2`).  
+  - **Column Discrepancies**: The `geom` column contained unwanted symbols.  
   - **Missing Values**: 0 entries were null.  
   - **Categorical Distribution**: 85% Public, 10% Independent, 5% SafeStart BC schools.  
 ![Data Profiling](assets/projectdatabrew.png)  
