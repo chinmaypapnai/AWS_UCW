@@ -213,7 +213,7 @@ LIMIT 3;
 - Switch EC2 to spot instances during non-peak hours.  
 - Compress raw data to reduce S3 costs.  
 
-![Cost Breakdown]((assets/chinmaycost.png))  
+![Cost Breakdown](assets/chinmaycost.png)  
 
 ---
 
