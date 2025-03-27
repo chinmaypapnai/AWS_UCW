@@ -180,18 +180,18 @@ LIMIT 3;
 ---
 
 ### **9. Cost Estimation**  
-| Service           | Cost Drivers                               | Monthly Cost |  
-|-------------------|--------------------------------------------|--------------|  
-| **S3 Storage**    | 150 GB (Standard-IA) + 10,000 PUT requests | $2.50        |  
-| **AWS Glue**      | 2 crawlers @ $0.44/DPU-hour               | $0.66        |  
-| **Glue Databrew** | 10 jobs @ $1/job + $5/GB processed        | $51.00       |  
-| **EC2**           | t3.medium (24/7)                          | $30.00       |  
-| **Athena**        | 1 TB data scanned                          | $5.00        |  
-| **Total**         |                                            | **$89.16**   |  
+
+Service	Monthly Cost
+S3 Storage	$2.50
+AWS Glue	$0.66
+Glue Databrew	$51.00
+EC2	$30.00
+Athena	$5.00
+Total	$89.16
 
 **Cost-Saving Tips**:  
-- Switch EC2 to spot instances during non-peak hours (saves ~$15/month).  
-- Compress raw data to reduce S3 costs by 40%.  
+- Switch EC2 to spot instances during non-peak hours.  
+- Compress raw data to reduce S3 costs.  
 
 ![Cost Breakdown](assets/DAP.png)  
 
