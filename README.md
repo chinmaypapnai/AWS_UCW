@@ -257,5 +257,8 @@ This project demonstrates how cloud technologies can democratize data access whi
 **Connect**: [LinkedIn](https://ca.linkedin.com/in/chinmaypapnai)  
 
 --- 
+**AWS Final Screenshot**
+![Final Exam](assets/AWS%FINAL.png)
+--- 
 **Author**
 Chinmay Papnai🏙️
