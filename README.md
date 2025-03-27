@@ -119,10 +119,10 @@ Here’s the revised **Diagnostic Analysis** section with deeper insights and cl
 ### **5. Data Quality Control**  
 #### 5.1 **Automated Quality Rules**  
 - **Glue ETL Quality Checks**:  
-  - **Rule 1**: Reject rows with missing `geo_local_area`.  
-  - **Rule 2**: Ensure `school_category` is one of ["PUBLIC", "INDEPENDENT", "SAFESTART BC"].    
+  - **Rule 1**: Ensure 'school_name` are more than 0.9 complete.  
+  - **Rule 2**: Ensure `school_category` are more than 0.9 complete.
+  - **Rule 3**: Ensure `school_name` are all unique.   
 ![QC Rules](/assets/rules.png)  
-![QC Rules](assets/QC%pipeline.png) 
 
 #### 5.2 **Segregate Valid/Invalid Data**  
 - Valid data stored in `vsb-trf-chi/passed/` for analysis.  
@@ -131,8 +131,10 @@ Here’s the revised **Diagnostic Analysis** section with deeper insights and cl
 
 #### 5.3 **Monitoring & Alerts**  
 - Configured CloudWatch alarms for:  
-  - **Bucket Size**: Alert if raw data exceeds 200 GB.  
-  - **Job Failures**: Notify if Glue ETL jobs fail consecutively.  
+  - **Bucket Size**:
+  - Alert if raw data exceeds  50 KB.
+  - Alert if transformed data exceeds 130 KB.
+  - Alert if curated data exceeds 100 KB.     
 ![Alarm Dashboard](assets/alarms.png)  
 
 ---
@@ -232,8 +234,8 @@ LIMIT 3;
 #### 10.3 **Governance Dashboard**  
 - **Metrics Tracked**:  
   - S3 bucket sizes over time.  
-  - Glue job success/failure rates.  
-  - Athena query costs.  
+  - Glue job resource use.  
+  - Alarms.  
   ![Dashboard](assets/dashboard.png)  
 
 ---
