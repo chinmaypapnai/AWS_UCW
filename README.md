@@ -10,7 +10,7 @@ This project aims to address the question: **identifying Vancouver neighborhoods
 **Key Contributions**:  
 - **End-to-End Pipeline**: Built a serverless architecture for data ingestion, cleaning, analysis, and visualization.  
 - **Cost Transparency**: Provided a breakdown of AWS operational costs for public sector budgeting.  
-- **Data Democracy**: Designed dashboards and alarms to empower data team for monitoring.  
+- **Data Governance**: Designed dashboards and alarms to empower data team for monitoring.  
 
 ---
 
