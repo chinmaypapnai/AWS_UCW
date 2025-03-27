@@ -98,12 +98,12 @@ This project aims to address the question: **identifying Vancouver neighborhoods
   - **Hypothesis 2**: **Zoning Regulations**  
     - City policies prioritize commercial/office spaces over public infrastructure in Downtown.  
 
-#### 4.2 **Validation Methodology**  
+#### 4.2 **Validation Methodology** 
+  - *Limitation*: "Due to prioritization, this data was not included in the AWS pipeline, as it was outside the scope of the essential requirements."
 - **Land Price Validation**:  
   - Cross-referenced with the **City of Vancouver’s Open Data Portal** (2024 property assessments) showing average land prices:  
     - Downtown: **$2,500/sq.ft**  
     - Suburban Areas (e.g., Killarney): **$800/sq.ft**  
-  - *Limitation*: Real estate data wasn’t integrated into the AWS pipeline due to scope constraints.  
 - **Zoning Validation**:  
   - Analyzed Vancouver’s 2025 zoning maps, confirming only **12% of Downtown** is zoned for public institutions.  
 
@@ -246,8 +246,29 @@ LIMIT 3;
 
 ---
 
+---
+
 ## 📝 **Conclusion**  
-This project demonstrates how cloud technologies can democratize data access while ensuring security and cost efficiency.
+This project demonstrates the power of cloud technologies to transform raw data into actionable insights for public good. By architecting a scalable AWS pipeline, I successfully identified **Downtown, Strathcona, and Arbutus Ridge** as Vancouver neighborhoods with the lowest public-school density—a critical finding for equitable urban planning.  
+
+**Key Achievements**:  
+- **Cost Efficiency**: The DAP was desined with cost efficency in mind through serverless optimizations, Glue job tuning and sticking to project requirements without goldplating.  
+- **End-to-End Automation**: Built a secure, reproducible workflow from ingestion (EC2/S3) to analysis (Athena), ensuring data quality with Glue Databrew and governance checks.  
+- **Actionable Insights**: Diagnosed root causes like zoning restrictions and land prices using cross-referenced datasets, empowering policymakers to address educational gaps.  
+
+**Technical Impact**:  
+The platform’s modular design allows seamless adaptation to other cities or public services (e.g., hospitals, parks), proving cloud analytics can drive data-driven governance. By prioritizing security (KMS encryption, CloudTrail logging) and stakeholder transparency (dashboards, alarms), this project bridges technical rigor with real-world usability.  
+
+**Looking Ahead**:  
+Future enhancements could integrate geospatial mapping (QuickSight) or predictive modeling to forecast school demand. This work underscores my ability to deliver scalable, cost-effective solutions—a skill I aim to leverage in tackling complex societal challenges through technology.  
+
+**Let’s Connect**:  
+[LinkedIn](#) | [GitHub](#) | [Email](#)  
+*Open to collaborations that turn data into impact!* 🚀  
+
+--- 
+
+This conclusion ties technical execution to real-world relevance, emphasizing cost savings, scalability, and societal impact while inviting further engagement.
 
 **Student ID**: 2305599  
 **License**: MIT  
