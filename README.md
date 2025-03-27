@@ -66,7 +66,7 @@ aws s3 cp school-list.csv s3://vsb-raw-chi/year=2025/quarter=01/
     - Data location in S3.  
   - This makes it easy to query data later with SQL.  
 
-![Glue Crawler Results](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/glue-crawler.png)  
+![Glue Crawler Results](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/crw-run.png)  
 
 ---
 
@@ -87,7 +87,7 @@ ORDER BY school_count ASC;        -- Sort from lowest to highest
     2. Strathcona  
     3. Arbutus Ridge  
 
-![Analysis Results](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/athena-results.png)  
+![Analysis Results](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/athena.png)  
 
 ---
 
