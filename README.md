@@ -22,7 +22,7 @@ The solution uses AWS tools like S3, EC2, Glue, and Athena to store, clean, anal
 3. **Data Analysis**: Use SQL queries to find school distribution.  
 4. **Cost Calculation**: Estimate monthly AWS expenses.  
 5. **Security**: Protect data with encryption and backups.  
-![DAP Structure](https://github.com/chinmaypapnai/AWS_UCW/blob/assets/Chinmay-DAP.png)
+![DAP Structure](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/Chinmay-DAP.png)
 ---
 
 ## 🛠️ Step-by-Step Implementation  
