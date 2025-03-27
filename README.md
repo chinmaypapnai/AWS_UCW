@@ -111,7 +111,7 @@ This project aims to address the question: **identifying Vancouver neighborhoods
 - School Names were checked for duplication as it is Primary Key and City of Vancouver does not allow two schools to be registred with the same name in the city.  
 - Data was further checked and validated in the data processing pipeline.
 - Clean data was outputed into system and user friendly formats. 
-![Data Pipeline](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/QC%20pipeline.png)
+![Data Pipeline](assets/QC%20pipeline.png)
 ---
 
 ### **5. Data Quality Control**  
@@ -238,7 +238,7 @@ LIMIT 3;
 
 ---
 **AWS Badge**
-![Final Exam](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/badge.png)
+![Final Exam](assets/badge.png)
 https://www.credly.com/go/wkwbzmXN
 --- 
 
