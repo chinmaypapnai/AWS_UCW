@@ -207,7 +207,7 @@ LIMIT 3;
 #### 10.2 **User Activity Monitoring**  
 - **CloudTrail Logs**: Tracked all API calls (e.g., who deleted a file).  
   ![CloudTrail Logs](assets/cloud%20trail%20user%20activity%20logs.png)  
-- **IAM Policies**: Restricted S3 delete access to admins only.  
+- **IAM Policies**: Restricted S3 delete access to admins (Labrole) only.  
 
 #### 10.3 **Governance Dashboard**  
 - **Metrics Tracked**:  
@@ -231,8 +231,8 @@ This project demonstrates how cloud technologies can democratize data access whi
 
 **Student ID**: 2305599  
 **License**: MIT  
-**GitHub Repo**: [Link](#)  
-**Connect**: [LinkedIn](#) | [Email](#)  
+**GitHub Repo**: [Link](https://github.com/chinmaypapnaai)  
+**Connect**: [LinkedIn](https://ca.linkedin.com/in/chinmaypapnai) | [Email](#)  
 
 --- 
 
