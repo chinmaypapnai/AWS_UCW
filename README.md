@@ -231,8 +231,8 @@ This project demonstrates how cloud technologies can democratize data access whi
 
 **Student ID**: 2305599  
 **License**: MIT  
-**GitHub Repo**: [Link](https://github.com/chinmaypapnaai)  
-**Connect**: [LinkedIn](https://ca.linkedin.com/in/chinmaypapnai) | [Email](#)  
+**GitHub Repo**: [Link](https://github.com/chinmaypapnai)  
+**Connect**: [LinkedIn](https://ca.linkedin.com/in/chinmaypapnai) | [Email](chinmay.papnai@myucw.ca)  
 
 --- 
 
