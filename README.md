@@ -111,7 +111,7 @@ ORDER BY school_count ASC;        -- Sort from lowest to highest
   - Data is split into "passed" (good) and "failed" (needs review) folders.  
   - Example checks: No missing school names, valid geographic areas.  
 
-![Data Quality Pineline](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/QC pipeline.png)  
+![Data Quality Pineline](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/QCpipeline.png)  
 
 ---
 
