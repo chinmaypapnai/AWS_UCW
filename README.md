@@ -32,7 +32,7 @@ This project addresses a critical urban planning challenge: **identifying Vancou
    - **Raw Zone**: Unprocessed data in `vsb-raw-chi`.  
    - **Transformed Zone**: Cleaned data in `vsb-trf-chi` (Parquet/CSV).  
    - **Curated Zone**: Analysis-ready datasets in `vsb-cur-chi`.  
-3. **Automation**: Glue Crawlers and ETL jobs reduce manual intervention.  
+3. **Automation**: Glue Crawlers and ETL jobs for automation and scalablity.  
 
 ---
 
@@ -41,7 +41,7 @@ This project addresses a critical urban planning challenge: **identifying Vancou
 ### **1. Data Ingestion**  
 #### 1.1 **Set Up EC2 Instance**  
 - Launched a `t3.micro` EC2 instance to simulate the Vancouver School Board (VSB) server environment.  
-- Configured IAM roles to grant S3 write access.  
+- Configured IAM roles (LabRole) to grant S3 write access.  
 ![EC2 Instance](assets/ec2in.png)  
 
 #### 1.2 **Upload Data to S3**  
@@ -110,7 +110,8 @@ This project addresses a critical urban planning challenge: **identifying Vancou
 
 #### 4.2 **Data Validation**  
 - School Names were checked for duplication as it is Primary Key.  
-- Data was further checked in the data processing pipeline 
+- Data was further checked in the data processing pipeline.
+- Clean data was outputed into system and user friendly formats. 
 ![Data Pipeline](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/QC%20pipeline.png)
 ---
 
@@ -144,8 +145,7 @@ This project addresses a critical urban planning challenge: **identifying Vancou
 ![Empty Database](assets/empty%20database.png)  
 
 #### 6.2 **Crawler Execution**  
-- Ran the `vsb-crw-chi` crawler to auto-detect schema changes.  
-- Reduced manual schema updates by 90%.  
+- Ran the `vsb-crw-chi` crawler to auto-detect schema changes.    
 ![Crawler Results](assets/crw-run.png)  
 
 ---
