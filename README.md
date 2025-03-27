@@ -39,7 +39,7 @@ The solution uses AWS tools like S3, EC2, Glue, and Athena to store, clean, anal
 aws s3 cp school-list.csv s3://vsb-raw-chi/year=2025/quarter=01/
 ```
 
-![Data Uploaded to S3](assets/s3-raw-data.png)  
+![Data Uploaded to S3](https://github.com/chinmaypapnai/AWS_UCW/blob/784b3007f66086e4e16b421a40753c88088e8abd/assets/s3-raw-data.png)  
 
 ---
 
