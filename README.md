@@ -66,7 +66,7 @@ This project aims to address the question: **identifying Vancouver neighborhoods
 
 #### 2.2 **Schema Validation**  
 - Verified data types (e.g., `geo_local_area` as string, `school_name` as primary key).  
-- Detecting outliers due to data entry errors.  
+- Detecting structural problems in the schema.  
 ![Schema Review](assets/schma.png)  
 
 ---
