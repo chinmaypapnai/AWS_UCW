@@ -113,7 +113,7 @@ Here’s the revised **Diagnostic Analysis** section with deeper insights and cl
 #### 4.2 **Data Validation**  
 - School Names were checked for duplication as it is Primary Key.  
 - Data was further checked in the data processing pipeline 
-![Data Pipeline](assets/visualetl.png)
+![Data Pipeline](assets/QC%pipeline.png)
 ---
 
 ### **5. Data Quality Control**  
@@ -121,7 +121,7 @@ Here’s the revised **Diagnostic Analysis** section with deeper insights and cl
 - **Glue ETL Quality Checks**:  
   - **Rule 1**: Reject rows with missing `geo_local_area`.  
   - **Rule 2**: Ensure `school_category` is one of ["PUBLIC", "INDEPENDENT", "SAFESTART BC"].    
-![QC Rules](assets/rules.png)  
+![QC Rules](/assets/rules.png)  
 ![QC Rules](assets/QC%pipeline.png) 
 
 #### 5.2 **Segregate Valid/Invalid Data**  
