@@ -39,7 +39,7 @@ The solution uses AWS tools like S3, EC2, Glue, and Athena to store, clean, anal
 aws s3 cp school-list.csv s3://vsb-raw-chi/year=2025/quarter=01/
 ```
 
-![Data Uploaded to S3](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/s3-raw-data.png)  
+![Data Uploaded to S3](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/ingestion complete.png)  
 
 ---
 
@@ -53,7 +53,7 @@ aws s3 cp school-list.csv s3://vsb-raw-chi/year=2025/quarter=01/
     - **CSV** (for easy human reading).  
   - Cleaned data goes to a new S3 bucket: `vsb-trf-chi`.  
 
-![Data Cleaning in Glue Databrew](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/glue-databrew.png)  
+![Data Cleaning in Glue Databrew](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/projectdatabrew.png)  
 
 ---
 
@@ -111,7 +111,7 @@ ORDER BY school_count ASC;        -- Sort from lowest to highest
   - Data is split into "passed" (good) and "failed" (needs review) folders.  
   - Example checks: No missing school names, valid geographic areas.  
 
-![Data Quality Dashboard](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/data-quality.png)  
+![Data Quality Pineline](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/QC pipeline.png)  
 
 ---
 
