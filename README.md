@@ -25,7 +25,7 @@ This project addresses a critical urban planning challenge: **identifying Vancou
 | **Security**      | AWS KMS, IAM                           | Encrypt data and manage access           |  
 | **Monitoring**    | Amazon CloudWatch, CloudTrail          | Track costs, performance, and user activity |  
 
-### **Data Pipeline Flow**  
+### **Data Analysis Platform Design**  
 ![Architecture Diagram](assets/Chinmay-DAP.png)  
 1. **Data Ingestion**: CSV files uploaded to S3 via EC2.  
 2. **Data Lake Zones**:  
