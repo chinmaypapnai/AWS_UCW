@@ -10,7 +10,7 @@ This project addresses a critical urban planning challenge: **identifying Vancou
 **Key Contributions**:  
 - **End-to-End Pipeline**: Built a serverless architecture for data ingestion, cleaning, analysis, and visualization.  
 - **Cost Transparency**: Provided a detailed breakdown of AWS operational costs for public sector budgeting.  
-- **Data Democracy**: Designed dashboards and alarms to empower non-technical stakeholders to monitor data health.  
+- **Data Democracy**: Designed dashboards and alarms to empower data team for monitoring.  
 
 ---
 
