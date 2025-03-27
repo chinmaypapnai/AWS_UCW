@@ -117,12 +117,7 @@ ORDER BY school_count ASC;        -- Sort from lowest to highest
 
 ## 📂 Repository Structure  
 ```
-├── assets/                 # Screenshots and diagrams
-├── src/  
-│   ├── data_ingestion/    # EC2 scripts to upload data  
-│   ├── glue_scripts/      # ETL job code  
-│   └── athena_queries/    # SQL files for analysis  
-├── LICENSE  
+├── assets/                 # Screenshots and diagrams  
 └── README.md  
 ```
 
