@@ -237,8 +237,8 @@ LIMIT 3;
   ![Dashboard](assets/dashboard.png)  
 
 ---
-**AWS Final Screenshot**
-![Final Exam](https://github.com/chinmaypapnai/AWS_UCW/blob/assets/badge.png)
+**AWS Badge**
+![Final Exam](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/badge.png)
 --- 
 
 ## 📂 **Repository Structure**  
