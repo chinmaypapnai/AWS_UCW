@@ -39,7 +39,7 @@ The solution uses AWS tools like S3, EC2, Glue, and Athena to store, clean, anal
 aws s3 cp school-list.csv s3://vsb-raw-chi/year=2025/quarter=01/
 ```
 
-![Data Uploaded to S3](https://github.com/chinmaypapnai/AWS_UCW/blob/784b3007f66086e4e16b421a40753c88088e8abd/assets/s3-raw-data.png)  
+![Data Uploaded to S3](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/s3-raw-data.png)  
 
 ---
 
@@ -53,7 +53,7 @@ aws s3 cp school-list.csv s3://vsb-raw-chi/year=2025/quarter=01/
     - **CSV** (for easy human reading).  
   - Cleaned data goes to a new S3 bucket: `vsb-trf-chi`.  
 
-![Data Cleaning in Glue Databrew](assets/glue-databrew.png)  
+![Data Cleaning in Glue Databrew](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/glue-databrew.png)  
 
 ---
 
@@ -66,7 +66,7 @@ aws s3 cp school-list.csv s3://vsb-raw-chi/year=2025/quarter=01/
     - Data location in S3.  
   - This makes it easy to query data later with SQL.  
 
-![Glue Crawler Results](assets/glue-crawler.png)  
+![Glue Crawler Results](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/glue-crawler.png)  
 
 ---
 
@@ -87,7 +87,7 @@ ORDER BY school_count ASC;        -- Sort from lowest to highest
     2. Strathcona  
     3. Arbutus Ridge  
 
-![Analysis Results](assets/athena-results.png)  
+![Analysis Results](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/athena-results.png)  
 
 ---
 
@@ -111,7 +111,7 @@ ORDER BY school_count ASC;        -- Sort from lowest to highest
   - Data is split into "passed" (good) and "failed" (needs review) folders.  
   - Example checks: No missing school names, valid geographic areas.  
 
-![Data Quality Dashboard](assets/data-quality.png)  
+![Data Quality Dashboard](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/data-quality.png)  
 
 ---
 
@@ -137,4 +137,4 @@ This project shows how cloud tools like AWS can turn raw data into actionable in
 --- 
 
 🔗 **Connect with Me**: [LinkedIn](https://www.linkedin.com/in/chinmaypapnai) | [GitHub](https://github.com/chinmaypapnai)  
-*Let’s build smarter cities with data!* 🏙️
+*Chinmay Papnai* 🏙️
