@@ -185,8 +185,7 @@ LIMIT 3;
 ![Query Results](assets/athena.png)  
 
 #### 8.2 **Interpretation**  
-- **Downtown**: High commercial zoning limits school expansion.  
-- **Strathcona**: Ongoing gentrification reduces family housing.  
+- **Downtown**: High commercial zoning limits school expansion.   
 - **Recommendation**: Partner with city planners to reserve land for schools.  
 
 ---
