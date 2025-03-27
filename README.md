@@ -5,11 +5,11 @@
 ---
 
 ## 🌟 **Overview**  
-This project addresses a critical urban planning challenge: **identifying Vancouver neighborhoods with the least access to public schools**. By leveraging AWS cloud tools, the platform transforms raw school data into actionable insights, enabling policymakers to prioritize resource allocation. Beyond technical implementation, the project emphasizes cost efficiency, scalability, and robust governance, serving as a blueprint for cloud-based public service analytics.  
+This project aims to address the question: **identifying Vancouver neighborhoods with the least access to public schools**. By using AWS cloud tools we can use the data to make meaningful infrences, enabling to prioritize educational resource allocation. Beyond just the DAP implementation, the project also focuses on cost efficiency, scalability, and robust governance, serving as a blueprint for cloud-based systems.  
 
 **Key Contributions**:  
 - **End-to-End Pipeline**: Built a serverless architecture for data ingestion, cleaning, analysis, and visualization.  
-- **Cost Transparency**: Provided a detailed breakdown of AWS operational costs for public sector budgeting.  
+- **Cost Transparency**: Provided a breakdown of AWS operational costs for public sector budgeting.  
 - **Data Democracy**: Designed dashboards and alarms to empower data team for monitoring.  
 
 ---
@@ -45,7 +45,7 @@ This project addresses a critical urban planning challenge: **identifying Vancou
 ![EC2 Instance](assets/ec2in.png)  
 
 #### 1.2 **Upload Data to S3**  
-- Transferred `school-list.csv` to the raw S3 bucket using AWS CLI:  
+- Transferred `school-list.csv` to the raw S3 bucket using powershell commands in the remote R2D server:  
   ```bash
   aws s3 cp school-list.csv s3://vsb-raw-chi/year=2025/quarter=01/
   ```  
@@ -60,7 +60,7 @@ This project addresses a critical urban planning challenge: **identifying Vancou
 - Created a Databrew project linked to the raw S3 bucket.  
 - **Key Insights**:  
   - **Column Discrepancies**: The `geom` column contained mixed formats (e.g., `POINT (-123.1 49.2)` and `-123.1, 49.2`).  
-  - **Missing Values**: 3 of `school_category` entries were null.  
+  - **Missing Values**: 0 entries were null.  
   - **Categorical Distribution**: 85% Public, 10% Independent, 5% SafeStart BC schools.  
 ![Data Profiling](assets/projectdatabrew.png)  
 
@@ -74,9 +74,8 @@ This project addresses a critical urban planning challenge: **identifying Vancou
 ### **3. Data Wrangling**  
 #### 3.1 **Clean the `geom` Column**  
 - **Steps Applied**:  
-  1. **Remove Text Artifacts**: Stripped `POINT (` and `)` using regex.  
-  2. **Split Coordinates**: Created `latitude` and `longitude` columns.  
-  3. **Filter Invalid Entries**: Dropped rows with non-numeric coordinates.   
+  1. **Remove Text Artifacts**: Stripped `POINT (` and `) using special character removal feature in databrew.  
+  2. **Filter Invalid Entries**: Dropped rows with non-numeric coordinates.   
 
 #### 3.2 **Standardize Data Formats**    
 - Checked for whitespace errors from `geo_local_area` to avoid duplicate entries (e.g., "Downtown " vs. "Down town").  
@@ -109,8 +108,8 @@ This project addresses a critical urban planning challenge: **identifying Vancou
   - Analyzed Vancouver’s 2025 zoning maps, confirming only **12% of Downtown** is zoned for public institutions.  
 
 #### 4.2 **Data Validation**  
-- School Names were checked for duplication as it is Primary Key.  
-- Data was further checked in the data processing pipeline.
+- School Names were checked for duplication as it is Primary Key and City of Vancouver does not allow two schools to be registred with the same name in the city.  
+- Data was further checked and validated in the data processing pipeline.
 - Clean data was outputed into system and user friendly formats. 
 ![Data Pipeline](https://github.com/chinmaypapnai/AWS_UCW/blob/main/assets/QC%20pipeline.png)
 ---
@@ -160,7 +159,7 @@ This project addresses a critical urban planning challenge: **identifying Vancou
 
 #### 7.2 **Save Curated Output**  
 - Stored results in `vsb-cur-chi` for visualization and reporting.  
-- **Output Format**: CSV for stakeholders, Parquet for future analysis.  
+- **Output Format**: CSV for User, Parquet optimised for System.  
 ![Summarization Complete](assets/summarization%20sucess.png)  
 
 ---
@@ -210,7 +209,7 @@ LIMIT 3;
 
 **Cost-Saving Tips**:  
 - Switch EC2 to spot instances during non-peak hours.  
-- Compress raw data to reduce S3 costs.  
+- Compress raw data to reduce S3 costs (snappy).  
 
 ![Cost Breakdown](assets/chinmaycost.png)  
 
@@ -221,7 +220,9 @@ LIMIT 3;
 - **KMS Keys**: Unique keys for raw, transformed, and curated buckets.  
   ![KMS Keys](assets/keys.png)  
 - **Versioning**: Enabled on all S3 buckets to recover deleted data.  
-  ![Versioning](assets/cur-bak-s3.png)  
+  ![Versioning](assets/cur-bak-s3.png)
+  ![Versioning](assets/trf-bak-s3.png)
+  ![Versioning](assets/raw-bak-s3.png)   
 
 #### 10.2 **User Activity Monitoring**  
 - **CloudTrail Logs**: Tracked all API calls (e.g., who deleted a file).  
